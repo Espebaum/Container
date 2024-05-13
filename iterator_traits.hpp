@@ -5,11 +5,13 @@
 
 namespace ft
 {
-    // struct input_iterator_tag {};
-    // struct output_iterator_tag {};
-    // struct forward_iterator_tag : public input_iterator_tag {};
-    // struct bidirectional_iterator_tag : public forward_iterator_tag {};
-    // struct random_access_iterator_tag : public bidirectional_iterator_tag {};
+    // #include <iterator> std::random_access_iterator_tag
+    // 위 사용이 제한되어있기 때문에 아래 tag struct를 사용함
+    struct input_iterator_tag {};
+    struct output_iterator_tag {};
+    struct forward_iterator_tag : public input_iterator_tag {};
+    struct bidirectional_iterator_tag : public forward_iterator_tag {};
+    struct random_access_iterator_tag : public bidirectional_iterator_tag {};
 
     template<typename Category, typename T, typename Distance = ptrdiff_t, typename Pointer = T*, typename Reference = T&>
     struct iterator 

@@ -4,5 +4,8 @@
 
 namespace ft
 {
-    
+    template<typename Iterator>
+    class random_access_iterator {
+
+    };
 }
