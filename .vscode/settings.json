@@ -12,6 +12,7 @@
         "iterator": "cpp",
         "memory": "cpp",
         "string": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "iostream": "cpp"
     }
 }

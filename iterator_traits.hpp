@@ -2,7 +2,6 @@
 
 #include <memory>
 #include <cstddef>
-
 namespace ft
 {
     // #include <iterator> std::random_access_iterator_tag
@@ -15,7 +14,7 @@ namespace ft
     struct random_access_iterator_tag : public bidirectional_iterator_tag {};
 
     template<typename Category, typename T, typename Distance = ptrdiff_t, typename Pointer = T*, typename Reference = T&>
-    struct iterator 
+    struct iterator
     {
         typedef Category    iterator_category;
         typedef T           value_type;
@@ -33,7 +32,7 @@ namespace ft
     struct iterator_traits
     {
         typedef typename Iterator::iterator_category    iterator_category;
-        typedef typename Iterator::value                value_type;
+        typedef typename Iterator::value_type           value_type;
         typedef typename Iterator::difference_type      difference_type;
         typedef typename Iterator::pointer              pointer;
         typedef typename Iterator::reference            reference; 
